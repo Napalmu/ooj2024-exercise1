@@ -7,25 +7,32 @@ import static org.junit.jupiter.api.Assertions.*;
 class SorterTest {
 
     @Test
-    void bubbleSort() {
+    void bubbleSortTest1() {
         int[] arr = {1, 3, 2, 4};
         Sorter.bubbleSort(arr);
         assertArrayEquals(new int[]{1, 2, 3, 4}, arr);
 
-        /*
-        * bubbleSort -rutiini ei toimi tarkoituksen mukaisesti, se vaikuttaisi järjestävän alkiot suurimmasta pienimpään, eikä pienimmästä suurimpaan.
-        *       -if (arr[j] < arr[j + 1]) pitäisi olla  if (arr[j] > arr[j + 1])
-        * toiminnassa on rajoitteita: rutiini muokkaa alkuperäistä taulukkoa, eikä täten palauta mitään.
-        *
-        *
-        * selectionSort -rutiini vaikuttaisi toimivan oikein.
-        * sekin muokkaa alkuperäistä taulukkoa. Parempi olisi, jos se muokkaisi kopiota taulukosta ja palauttaisi myöskin jotain.
-        * */
-
+    }
+    @Test
+    void bubbleSortTest2(){
+        int[] arr = {1, 3, 2, 4};
+        Sorter.bubbleSort(arr);
+        assertArrayEquals(new int[]{4,3,2,1}, arr);
     }
 
+    /*
+     * bubbleSort -rutiini ei toimi tarkoituksen mukaisesti, se vaikuttaisi järjestävän alkiot suurimmasta pienimpään, eikä pienimmästä suurimpaan.
+     *       -if (arr[j] < arr[j + 1]) pitäisi olla  if (arr[j] > arr[j + 1])
+     * toiminnassa on rajoitteita: rutiini muokkaa alkuperäistä taulukkoa, eikä täten palauta mitään.
+     *
+     *
+     * selectionSort -rutiini vaikuttaisi toimivan oikein.
+     * sekin muokkaa alkuperäistä taulukkoa. Parempi olisi, jos se muokkaisi kopiota taulukosta ja palauttaisi myöskin jotain.
+     * */
+
+
     @Test
-    void selectionSort() {
+    void selectionSortTest1() {
         int[] arr = {1, 3, 2, 4};
         Sorter.selectionSort(arr);
         assertArrayEquals(new int[]{1, 2, 3, 4}, arr);
