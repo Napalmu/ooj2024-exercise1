@@ -3,8 +3,8 @@ package fi.utu.tech.ooj.exercise1.teht3;
 public class DensityCalculator {
 
     /*
-     * Alkuehto: TODO: määritä tähän alkuehto
-     * Loppuehto: TODO: määritä tähän loppuehto
+     * Alkuehto: Double massa > 0.0 ja Double tilavuus > 0.0
+     * Loppuehto: palauttaa tiheyden (massa/tilavuus)
      */
     public static Double laskeTiheys(Double massa, Double tilavuus) {
         return (massa / tilavuus);
