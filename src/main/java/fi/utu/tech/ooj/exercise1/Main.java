@@ -3,6 +3,7 @@ package fi.utu.tech.ooj.exercise1;
 import fi.utu.tech.ooj.exercise1.teht2.Teht1;
 import fi.utu.tech.ooj.exercise1.teht3.Teht2;
 import fi.utu.tech.ooj.exercise1.teht4.Teht3;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("DTEK0066 2024 syksy, Tehtäväkerta 1");

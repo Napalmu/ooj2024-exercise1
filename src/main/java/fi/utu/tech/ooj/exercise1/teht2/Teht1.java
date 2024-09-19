@@ -5,13 +5,15 @@ public class Teht1 {
         //Tulostetaan info-rivi, jotta suoritusta on helpompi seurata
         System.out.println("Suoritetaan Tehtävä 1");
 
-        int[] nums = new int[] {  };
+        int[] nums = new int[] {1, -2, -3, 4};
         Float result = -1f;
         try {
+
             result = Calculator.avg(nums);
         }
-        catch(EmptyArrayException e) {
+        catch(EmptyArrayException | NegativeInputException e) {
             System.out.println("Oho, tapahtui hassuja");
+            System.out.println(e.toString());
         }
 
         //Tulostetaan info-rivi, jotta suoritusta on helpompi seurata
