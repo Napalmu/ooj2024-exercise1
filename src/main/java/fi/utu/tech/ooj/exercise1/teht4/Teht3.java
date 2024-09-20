@@ -13,8 +13,8 @@ public class Teht3 {
         int[] lista2 = new int[] { 3,-5 ,6, 23, 11, 23, 0, -1};
         System.out.println("Lista 2 ennen järjestelyä: " + Arrays.toString(lista2));
 
-        System.out.println("Lasketaan kertoma luvulle 12");
-        int tulos = Factorial.calculateFactorial(12);
+        System.out.println("Lasketaan kertoma luvulle 11");
+        int tulos = Factorial.calculateFactorial(11);
         System.out.println("Kertoma on: " + tulos);
 
         //Tulostetaan info-rivi, jotta suoritusta on helpompi seurata
